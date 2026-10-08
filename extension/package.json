@@ -1,0 +1,15 @@
+{
+  "name": "vscode-mobile-status-helper",
+  "displayName": "VS Code Mobile Status Helper",
+  "version": "0.1.0",
+  "publisher": "local",
+  "engines": { "vscode": "^1.90.0" },
+  "main": "./src/extension.js",
+  "activationEvents": ["onCommand:vscode-mobile-status.sendStatus"],
+  "contributes": {
+    "commands": [{
+      "command": "vscode-mobile-status.sendStatus",
+      "title": "Send mobile status update"
+    }]
+  }
+}

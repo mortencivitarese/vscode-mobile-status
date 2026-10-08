@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0f172a" />
+    <title>VS Code Mobile Status</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Agent monitor</p>
+          <h1>VS Code mobile</h1>
+        </div>
+        <div id="status-pill" class="pill idle">idle</div>
+      </header>
+
+      <main class="grid">
+        <section class="card big">
+          <div class="label-row">
+            <span class="label">Session</span>
+            <span id="session-name">desktop-session</span>
+          </div>
+          <div class="metric-row">
+            <div>
+              <div class="metric-label">Project</div>
+              <div id="project-name" class="metric-value">-</div>
+            </div>
+            <div>
+              <div class="metric-label">Current file</div>
+              <div id="current-file" class="metric-value">-</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="label">Agent</div>
+          <div id="agent-name" class="metric-value">idle</div>
+          <div class="mini">Model: <span id="model-name">not connected</span></div>
+        </section>
+
+        <section class="card">
+          <div class="label">Build & tests</div>
+          <div class="mini">Build: <span id="build-status">not running</span></div>
+          <div class="mini">Tests: <span id="test-status">not running</span></div>
+        </section>
+
+        <section class="card full">
+          <div class="label">Recent logs</div>
+          <ul id="log-list" class="log-list"></ul>
+        </section>
+      </main>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "VS Code Mobile Status",
+  "short_name": "VSCodeMobile",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#020817",
+  "theme_color": "#0f172a",
+  "icons": []
+}
